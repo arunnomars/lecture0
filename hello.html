@@ -2,15 +2,64 @@
 <html>
     <head>
       <title> My Webpage!</title>
+      <style>
+        h2 {
+          color:red;
+          text-align: center;
+        }
+        div {
+          background-color: teal;
+          width: 100px;
+          height: 400px;
+          margin: 30px;
+          padding: 20px;
+        }
+
+        div2 {
+          font-family: Arial, Sans serif;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        div3{
+          border: 3px solid blue;
+        }
+
+        table{
+          border: 2px solid black;
+          border-collapse: collapse; <!-- double borders gone -->
+          width: 50%; <!--responsive size-->
+        }
+        th{
+          border: 1px solid black;
+          background-color: lightgray;
+        }
+        td{
+          border: 1px dotted black;
+          padding: 5px;
+        } <!--// can do th,td 4 both styles-->
+
+        #top {
+          font-size: 36px;
+        }
+        .name {
+          font-weight: bold;
+        }
+
+      </style> //style for all of h2
+
     </head>
     <body>
       Hello, World! Hello again, hello a third time hello
-        <h1> heading 1 </h1>
-        <h2> heading 1 </h2>
-        <h3> heading 1 </h3>
-        <h4> heading 1 </h4>
-        <h5> heading 1 </h5>
-        <h6> heading 1 </h6>
+        <h1 style= "color:blue; text-align:center;"> heading 1 </h1> <!--or use #hexcode where color is-->
+        <h2> heading 2 </h2>
+        <h3> heading 3
+            <link rel="stylesheet" href= "styles.css"> <!-- styles.css is a script made for colour and formatting, it is being referenced to this script.-->
+        </h3>
+        <h4> heading 4 </h4>
+        <h5> heading 5 </h5>
+        <h6> heading 6 </h6>
+          <p> paragraph </p>
 
         An unordered list
         <ul>
@@ -24,7 +73,7 @@
           <li>num2</li>
         </ol>
 
-        <img src="https://en.wikipedia.org/wiki/Boom_Overture#/media/File:Boom_Technology_airliner_concept.jpg" height = "200" width="300"> //or width= "50%" which makes it responsive to page size
+        <img src="https://en.wikipedia.org/wiki/Boom_Overture#/media/File:Boom_Technology_airliner_concept.jpg" height = "200" width="300"> <!--or width= "50%" which makes it responsive to page size-->
 
         <table>
           <tr>
@@ -37,6 +86,19 @@
         <form>
           <input type= "text" placeholder="Full Name" name="name">
           <button>Submit!</button>
+
+
+        <div id="top"> <!-- use id (#) to make whatever is on "top(unique id)" to hold the style properties defined-->
+          this is the <span class="name">top</span> of my web page. <!--uses style tag for div, div is just a segment that you define.-->
+        </div>
+
+        <div2>
+          yes sir
+        </div2>
+
+        <div3>
+          another one for borders
+        </div3>
 
     </body>
 </html>
